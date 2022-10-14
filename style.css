@@ -29,10 +29,6 @@ body {
     width: 25%;
     left: -500px;
     height: 100vh;
-    z-index: -100;
-}
-
-.navbar.show {
     z-index: 100;
 }
 
@@ -64,6 +60,14 @@ body {
     background-color: #000;
     width: calc(100% + 40px);
     transition: .3s ease-out;
+}
+
+.navbar.closed .whitebox {
+    transition-delay: 0s;
+}
+
+.navbar.closed .blackbox {
+    transition-delay: .4s;
 }
 
 .nav-main {
